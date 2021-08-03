@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.cover {
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    flex-wrap: wrap;
+    min-width: 100%;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: disappear 7s 1;
+}
+
+#restart {
+    border: none;
+    padding: 30px 30px;
+    background: rgb(202, 51, 51);
+    color: white;
+    font-family: cursive;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    outline: none;
+}
+
+.cover h1 {
+    opacity: 0;
+    animation-delay: 1s;
+    animation: smooth_display 4s 1;
+}
+
+.cover img {
+    opacity: 0;
+    margin-left: 50px;
+    animation: smooth_display 2s 1;
+    animation-delay: 2s;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+.instructions img {
+    margin-left: 5px;
+}
+
+#play {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    background: linear-gradient(90deg,green, rgb(204, 195, 76), orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 5555;
+    transform: translateY(0);
+    font-size: 50px;
+    cursor: pointer;
+    animation: float 2s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-10px);
+    }
+  
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+@keyframes smooth_display {
+    0% {
+        z-index: 222222;
+        opacity: 0;
+    }
+  
+    100% {
+        z-index: 222222;
+        opacity: 1;
+    }
+}
+
+
+@keyframes disappear {
+    0% {
+        z-index: 22222;
+        opacity: 1;
+    }
+    90% {
+        z-index: 22222;
+        opacity: 1;
+    }
+    100% {
+        z-index: -1;
+        opacity: 0;
+    }
+}
+
+
+body {
+    background-color: #dac1c1;
+    font-family: cursive;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+}
+
+.main {
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.tetris {
+    width: 200px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    background-color: #eee;
+}
+
+.excel {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.vailet {
+    background-color: rgb(107, 8, 107);
+}
+
+#boom {
+    position: absolute;
+    display: none;
+    top: 30%;
+    font-size: 90px;
+    right: 5%;
+    font-family: cursive;
+    color: orange;
+    text-shadow: 1px 1px 3px black;
+    animation: zoom 0.6s infinite;
+    transform-origin: center;
+}
+
+@keyframes zoom {
+    10% {
+      font-size: 101px;  
+    }
+    70% {
+        font-size: 102px;
+    }
+    100% {
+        font-size: 105px;
+    }
+}
+
+
+.blue {
+    background-color: rgb(8, 55, 212);
+    z-index: 111;
+}
+
+.red {
+    background-color: rgb(226, 73, 73);
+}
+
+.orange {
+    background-color: rgb(245, 120, 3);
+    z-index: 111;
+}
+
+.figure {
+    background-color: rgb(139, 1, 121);
+}
+
+.cyan {
+    background-color: rgb(5, 158, 138);
+    z-index: 111;
+}
+
+.green {
+    background-color: rgb(6, 163, 77);
+}
+
+.yellow {
+    background-color: rgb(204, 204, 0);
+}
+
+.pink {
+    background-color: #DA1884;
+}
+
+.brown {
+    background-color: rgb(78, 43, 10);
+}
+
+.salat {
+    background-color: rgb(30, 219, 115);
+}

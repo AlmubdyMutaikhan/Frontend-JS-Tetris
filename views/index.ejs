@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Tetris Game</title>
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+        <div class="cover">
+            <h1>Welcome to Tetris Game</h1>
+            <img src="https://s3.amazonaws.com/tetris-www/assets/product/2017/05/31/tetris-mobile-728x728_728x728.png" height="450" width="450" alt="tetris logo" />
+            <p>
+                2021 is the year the game project came to my mind: Tetris © 1985~2021 Tetris Holding
+            </p>
+        </div>
+
+        <h1 id="play">Play</h1>
+        <h1 class="title">Tetris</h1>
+        
+        <div>
+            <h3 class="score">Your score:</h3>
+            <div class="instructions">
+                <h3>Inctructions: </h3>
+                <div>
+               <p>Rotate <img src="https://www.iconexperience.com/_img/v_collection_png/256x256/shadow/keyboard_key_up.png" height="30px" width="30px" /></p>
+                </div>
+                <div>
+                    <p>Soft drop <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/keyboard_key_down.png" height="30px" width="30px" /></p>
+                </div>
+                <div>
+                   <p>Move left <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/keyboard_key_left.png" height="30px" width="30px" /></p>
+                </div>
+                <div>
+                 <p>Move right <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/keyboard_key_right.png" height="30px" width="30px" /></p>
+                </div>
+              
+                <div>
+                    <p>Start/Pause <img src="  https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/keyboard_key_q.png" height="30px" width="30px" /></p>
+                   </div>
+            </div>
+        </div>
+        <div class="main">
+
+        </div>
+        <button id="restart">Restart</button>
+        <h1 id="boom">BOOM!</h1>
+            <audio id="bgSound" autoplay loop>
+                <source src="./sounds/tetris-gameboy-02.mp3" type="audio/mp3">
+            </audio>
+     <script type="module" src="main.js"></script>
+    </body>
+</html>
